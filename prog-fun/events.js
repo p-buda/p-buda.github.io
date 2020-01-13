@@ -84,6 +84,7 @@ function convert() {
 	valueF = valueToConvert.value;
 	try {
 		if(isNaN(valueF) || valueF === '') { // If the data is not a number, display an error message by the textbox
+			document.getElementById("result").value = "";
 			throw new Error("Please enter a number.")
 		}
 		else
