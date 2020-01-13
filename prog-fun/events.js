@@ -83,7 +83,7 @@ function convert() {
 	// Get to the value itself:
 	valueF = valueToConvert.value;
 	try {
-		if(isNaN(valueF)) { // If the data is not a number, display an error message by the textbox
+		if(isNaN(valueF) || valueF === '') { // If the data is not a number, display an error message by the textbox
 			throw new Error("Please enter a number.")
 		}
 		else
