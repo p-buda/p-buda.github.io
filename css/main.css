@@ -1,14 +1,20 @@
 /* Special thanks for the grid layout guidance and resources to: 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 
+Color Scheme: 
+#F0F7D4
+#B2D732
+#4424D6
+#FC600A
+#110934
 */
 
 body {
 display: grid;
 grid-gap: 10px;
 font-family: sans-serif;
-background-color: yellow;
-color: white;
+background-color: white; /* hsl(60, 100%, 50%) */
+color: #110934;
 }
 
 header, main, footer {
@@ -21,6 +27,7 @@ header, main, footer {
 .one {
 grid-column: 1 / 1;
 grid-row: 1;
+background-color: #B2D732;
 }
 .two { 
 grid-column: 4 / 4;
@@ -28,7 +35,8 @@ grid-row: 1;
 }
 /* Navbar */
 .three {
-background-color: black;
+background-color: #110934; /* hsl(0, 100%, 0%) */
+color: #F0F7D4;
 grid-column: 1 / 5;
 grid-row: 1;
 position: sticky;
@@ -52,6 +60,8 @@ grid-row: 6 / 10;
 .six {
 grid-column: 1 / 5;
 grid-row: 1;
+background-color: #110934;
+color: #F0F7D4;
 }
 
 .hero-image {
@@ -64,14 +74,14 @@ position: relative;
 
 .hero-text {
 font-size: 130%;
-color: white;
+color: black;
 position: absolute;
 bottom: 10%;
 left: 5%;
 }
 
 section {
-background-color: black;
+background-color: #F0F7D4;
 }
 
 
@@ -90,7 +100,7 @@ grid-auto-rows: minmax(100px, auto);
 }
 
 .article-wrapper article {
-background-color: rosybrown;
+background-color: white;
 grid-column: 2 / 12;
 grid-row: 1 / 8;
 }
